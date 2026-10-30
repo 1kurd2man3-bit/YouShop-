@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ef4056"><title>YouShop | خرید آنلاین</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="topline">ارسال سریع به سراسر کشور | خریدی مطمئن و آسان</div>
+  <header class="header">
+    <a class="logo" href="/">You<span>Shop</span></a>
+    <form id="searchForm" class="search"><span>⌕</span><input id="searchInput" placeholder="جست‌وجوی کالا، برند یا دسته‌بندی..." aria-label="جست‌وجو"><button>جست‌وجو</button></form>
+    <button class="cart-btn" id="openCart">🛒 سبد خرید <b id="cartCount">۰</b></button>
+  </header>
+  <nav class="nav" id="categories"><button class="active" data-category="همه">همه کالاها</button></nav>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">پیشنهادهای روز YouShop</p><h1>خرید هوشمندانه،<br>زندگی راحت‌تر.</h1><p>محصولات محبوب را با چند کلیک پیدا کن.</p><a href="#products" class="hero-link">مشاهده محصولات ←</a></div>
+      <div class="hero-art"><span class="circle c1"></span><span class="circle c2"></span><div class="hero-emoji">🛍️</div><div class="floating">پیشنهاد ویژه ✨</div></div>
+    </section>
+    <div class="section-head" id="products"><div><h2>منتخب محصولات</h2><p>محصولات متنوع برای هر سلیقه</p></div><span id="resultCount"></span></div>
+    <div id="productsGrid" class="grid"><div class="loading">در حال دریافت محصولات…</div></div>
+    <section class="benefits"><div>🚚 <b>ارسال سریع</b><small>تحویل آسان سفارش‌ها</small></div><div>🔒 <b>خرید امن</b><small>اطلاعات سفارش محفوظ</small></div><div>💬 <b>پشتیبانی</b><small>همراه شما در خرید</small></div><div>↩️ <b>ضمانت بازگشت</b><small>با شرایط فروشگاه</small></div></section>
+  </main>
+  <footer><a class="logo" href="/">You<span>Shop</span></a><p>فروشگاه اینترنتی YouShop · پشتیبانی: youshop.1405@gmail.com · <a href="https://t.me/Youshop123" target="_blank" rel="noopener">کانال تلگرام</a></p><small>© ۲۰۲۶ YouShop</small></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="سبد خرید"><div class="panel-head"><h2>سبد خرید شما</h2><button id="closeCart" class="icon-btn">✕</button></div><div id="cartItems"></div><div class="cart-bottom"><div class="total"><span>مبلغ کل</span><b id="cartTotal">۰ تومان</b></div><button id="checkoutBtn" class="primary full">ثبت سفارش</button></div></aside>
+  <dialog id="checkoutDialog"><form id="checkoutForm" class="checkout"><div class="panel-head"><h2>اطلاعات تحویل سفارش</h2><button type="button" id="closeCheckout" class="icon-btn">✕</button></div><label>نام و نام خانوادگی<input name="customerName" required maxlength="120" placeholder="نام شما"></label><label>شماره تماس<input name="phone" required inputmode="tel" maxlength="30" placeholder="09xxxxxxxxx"></label><label>آدرس کامل<textarea name="address" required maxlength="500" rows="3" placeholder="استان، شهر، خیابان، پلاک..."></textarea></label><button class="primary full">ثبت نهایی سفارش</button><p id="checkoutMessage" role="status"></p></form></dialog>
+  <script src="/app.js"></script>
+</body></html>
